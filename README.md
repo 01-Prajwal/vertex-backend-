@@ -34,14 +34,7 @@
    npm run dev
    ```
 
-## 🔄 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/signup` | Register a new user |
-| POST | `/api/auth/login` | Authenticate a user |
-| GET | `/api/twitter/feed` | Get Twitter feed (requires authentication) |
-| GET | `/api/user/profile` | Get user profile (requires authentication) |
 
 ## 🐳 Deployment (Google Cloud Run)
 
@@ -69,36 +62,7 @@
    - Deployed URL: https://node-backend-660228117993.us-central1.run.app
    - Use this URL to connect from your frontend.
 
-## 📋 Project Structure
 
-```
-creator-dashboard-backend/
-│
-├── config/
-│   ├── db.js               # Database connection
-│   └── passport.js         # Passport configuration for JWT
-│
-├── controllers/
-│   ├── authController.js   # User authentication logic
-│   └── twitterController.js # Twitter feed logic
-│
-├── middleware/
-│   └── auth.js             # Authentication middleware
-│
-├── models/
-│   └── User.js             # User model schema
-│
-├── routes/
-│   ├── auth.js             # Authentication routes
-│   └── twitter.js          # Twitter API routes
-│
-├── .env                    # Environment variables (ignored by git)
-├── .gitignore
-├── Dockerfile
-├── package.json
-├── package-lock.json
-└── server.js              # Entry point
-```
 
 
 
